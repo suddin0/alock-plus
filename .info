@@ -1,0 +1,8 @@
+
+autoreconf --install
+# upstream bug: Configure ignores --prefix option
+./configure --enable-pam --enable-hash --enable-xrender --enable-imlib2 \
+--with-dunst --with-xbacklight
+make
+
+
